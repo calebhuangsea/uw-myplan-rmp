@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "UW MyPlan to RMP",
+  "version": "1.0",
+  "description": "A chrome extension that allows uw students to go to ratemyprofessor website by clicking the professor's name.",
+
+  "icons": {
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://myplan.uw.edu/course/*"
+      ],
+	  "run_at": "document_end"
+    }
+  ]
+}
